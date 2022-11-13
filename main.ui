@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>PDF Merger</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/letter-m.png</normaloff>icons/letter-m.png</iconset>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QFrame" name="merge_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="merge_vertical_layout">
+       <item>
+        <widget class="QLabel" name="merge_logo_label">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>icons/mergePDF_logo.png</pixmap>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="merge_push_button">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #EB5679;
+	color: #FFFFFF;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	background-color: #EE708E;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Merge PDF</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="merge_vertical_spacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="split_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="split_vertical_layout">
+       <item>
+        <widget class="QLabel" name="split_logo_label">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>icons/splitPDF_logo.png</pixmap>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="split_push_button">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #609EEA;
+	color: #FFFFFF;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	background-color: #83B3EF;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Split PDF</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="split_vertical_spacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="rotate_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="rotate_vertical_layout">
+       <property name="topMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="rotate_logo_label">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>icons/rotatePDF_logo.png</pixmap>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="rotate_push_button">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #B876ED;
+	color: #FFFFFF;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+}
+QPushButton:pressed {
+	background-color: #CA99F2;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Rotate PDF</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="rotate_vertical_spacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>701</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionMenu"/>
+    <addaction name="actionMerge_PDF"/>
+    <addaction name="actionSplit_PDF"/>
+    <addaction name="actionRotate_PDF"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMenu">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/home.png</normaloff>icons/home.png</iconset>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionRotate_PDF">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/rotate.png</normaloff>icons/rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rotate PDF</string>
+   </property>
+  </action>
+  <action name="actionSplit_PDF">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/split.png</normaloff>icons/split.png</iconset>
+   </property>
+   <property name="text">
+    <string>Split PDF</string>
+   </property>
+  </action>
+  <action name="actionMerge_PDF">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/merge.png</normaloff>icons/merge.png</iconset>
+   </property>
+   <property name="text">
+    <string>Merge PDF</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
