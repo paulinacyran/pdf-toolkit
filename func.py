@@ -217,6 +217,15 @@ class Rotator():
 				pdf_writer.write(new_file)
 			# Show message in statusbar
 			self.statusbar.showMessage(f'New PDFs created: {self.new_file_name} in {self.new_file_path}')
+			# Set the 'rotate_button' disabled
+			self.rotate_button.setEnabled(False)
+			# Uncheck radiobuttons
+			self.radioButton_yes.setAutoExclusive(False)
+			self.radioButton_yes.setChecked(False)
+			self.radioButton_yes.setAutoExclusive(True)
+			self.radioButton_no.setAutoExclusive(False)
+			self.radioButton_no.setChecked(False)
+			self.radioButton_no.setAutoExclusive(True)
 		except:
 			# Show message in statusbar
 			self.statusbar.showMessage(f'Something went wrong. Try again.')
